@@ -6,7 +6,8 @@
 
 <p align="center">
   A tiny macOS menu bar app that draws a colorful trail behind your mouse cursor.<br>
-  Free, open source, no ads, no data collection.
+  Free, open source, no ads, no data collection.<br>
+  <em>On Windows? Get the <a href="https://github.com/changymon/MouseTrail-Windows">Windows version</a>.</em>
 </p>
 
 ---
