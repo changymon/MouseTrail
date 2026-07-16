@@ -1,0 +1,6 @@
+.DS_Store
+MouseTrail.app/
+dist/
+*.zip
+icon/MouseTrail.iconset/
+*.provisionprofile
