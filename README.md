@@ -11,6 +11,29 @@
 
 ---
 
+## Why I made this
+
+This app exists because of a World of Warcraft addon. I used a cursor
+trail addon from CurseForge for years, and eventually realized the thing
+I missed most outside the game wasn't anything in the game — it was
+being able to *find my mouse*.
+
+Like a lot of neurodivergent people, I constantly lose track of my
+cursor. It's a small thing, but it happens dozens of times a day: eyes
+scanning the screen, wiggling the mouse, hunting for a tiny arrow across
+two displays. macOS has a shake-to-enlarge feature, but that only helps
+after you've already lost it.
+
+A trail fixes the problem at the source — your cursor becomes something
+your eyes track effortlessly, all the time, because it moves with color
+and motion instead of being a small static arrow. Everything else
+followed from that: it had to be free, because an accessibility aid
+shouldn't cost money; it had to stay out of the way, because it needs to
+run all day; and it had to look good, because if something's going to be
+on your screen every waking hour, it may as well have style.
+
+If it helps you the way it helps me, that's the whole point. 🌈
+
 ## Features
 
 - **Three styles** — clean **Line**, glowing **Comet**, or twinkling **Sparkles**
