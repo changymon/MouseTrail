@@ -42,7 +42,11 @@ APP="dist/MouseTrail.app"
 rm -rf dist
 mkdir -p "$APP/Contents/MacOS" "$APP/Contents/Resources"
 
-swiftc -O -o "$APP/Contents/MacOS/MouseTrail" main.swift -framework Cocoa
+# Universal binary: Apple Silicon + Intel.
+swiftc -O -target arm64-apple-macos13.0  -o /tmp/mousetrail-arm64  main.swift -framework Cocoa
+swiftc -O -target x86_64-apple-macos13.0 -o /tmp/mousetrail-x86_64 main.swift -framework Cocoa
+lipo -create /tmp/mousetrail-arm64 /tmp/mousetrail-x86_64 -output "$APP/Contents/MacOS/MouseTrail"
+rm /tmp/mousetrail-arm64 /tmp/mousetrail-x86_64
 cp Info.plist "$APP/Contents/Info.plist"
 cp icon/MouseTrail.icns "$APP/Contents/Resources/MouseTrail.icns"
 cp MouseTrail.provisionprofile "$APP/Contents/embedded.provisionprofile"
